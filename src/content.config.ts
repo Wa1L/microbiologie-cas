@@ -7,7 +7,8 @@ const cases = defineCollection({
   loader: docsLoader(),
   schema: docsSchema({
     extend: z.object({
-      chapter: z.number().int().min(1).max(26),
+      // 0 is reserved for the home page / non-case pages
+      chapter: z.number().int().min(0).max(26),
       caseNumber: z.string().regex(/^\d+\.\d+$/),
       part: z.enum([
         'Résistance aux antibiotiques',
