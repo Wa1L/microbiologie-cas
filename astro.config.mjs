@@ -26,20 +26,20 @@ export default defineConfig({
         { label: 'Accueil', link: '/' },
         {
           label: 'I — Résistance aux antibiotiques',
-          autogenerate: { directory: '01-resistance' },
+          items: [{ autogenerate: { directory: '01-resistance' } }],
         },
         {
           label: 'II — Virologie',
-          autogenerate: { directory: '02-viral-gastro' },
-          // Add the other virology chapters here as you create folders
+          items: [{ autogenerate: { directory: '02-viral-gastro' } }],
+          // Add the other virology chapters here as you create their folders
         },
         {
           label: 'III — Bactériologie',
-          autogenerate: { directory: '14-fondamentale' },
+          items: [{ autogenerate: { directory: '14-fondamentale' } }],
         },
         {
           label: 'IV — Mix',
-          autogenerate: { directory: '26-mix' },
+          items: [{ autogenerate: { directory: '26-mix' } }],
         },
       ],
     }),
