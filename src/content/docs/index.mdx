@@ -1,40 +1,39 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Cas Cliniques de Microbiologie
+description: Résidanat en Algérie — Dr Wail NAMOUNE
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: 26 chapitres — Bactériologie, Virologie, Phénotypes de résistance
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Commencer par le chapitre 1
+      link: /01-resistance/01-01/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Voir tous les chapitres
+      link: /01-resistance/
       variant: minimal
+chapter: 0
+caseNumber: "0.0"
+part: Mix
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## À propos de cet ouvrage
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+Cet ouvrage rassemble les cas cliniques de microbiologie du résidanat,
+classés en 26 chapitres avec leurs corrigés.
+
+<CardGrid>
+  <Card title="I — Résistance aux antibiotiques" icon="seti:regex">
+    Phénotypes de résistance, BHRe, mécanismes enzymatiques.
+  </Card>
+  <Card title="II — Virologie" icon="seti:video">
+    Infections respiratoires, hépatites, infections du fœtus et du nouveau-né.
+  </Card>
+  <Card title="III — Bactériologie" icon="seti:microscope">
+    Gastro-entérites, infections urinaires, SNC, cardiaques, zoonoses.
+  </Card>
+  <Card title="IV — Mix" icon="seti:notebook">
+    Cas transversaux et sérologies complexes.
+  </Card>
 </CardGrid>
